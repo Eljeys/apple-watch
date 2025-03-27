@@ -4,6 +4,11 @@
   --background: #ffffff;
   --foreground: #171717;
   --background-clr: linear-gradient(294.28deg, #c8dce6 0%, #b6ccda 100%);
+
+  --h1-font-size: 3rem;
+  --link-font-size: 1.5rem;
+
+  --font-weight: bold;
 }
 
 @theme inline {
@@ -46,4 +51,30 @@ header {
   gap: 0.5rem;
   width: 2.5rem;
   margin-inline-end: 1rem;
+}
+
+.info-card-container {
+  display: flex;
+  border: solid red;
+  flex-direction: column;
+}
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+.Buy-button {
+  border: 2px solid white;
+  width: fit-content;
+  padding-inline: 7rem;
+  padding-block: 1rem;
+  border-radius: 1.5rem;
+  color: white;
+  font-weight: var(--font-weight);
+  font-size: var(--link-font-size);
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
