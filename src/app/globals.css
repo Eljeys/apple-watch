@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
+  /*Spaces*/
+  --flow-space: 2rem;
+  /*Colors*/
   --background: #ffffff;
   --foreground: #171717;
   --background-clr: linear-gradient(294.28deg, #c8dce6 0%, #b6ccda 100%);
 
+  /*Font size*/
   --h1-font-size: 3rem;
   --link-font-size: 1.5rem;
 
+  /*Font weights*/
   --font-weight: bold;
 }
 
@@ -32,6 +37,19 @@ body {
 }
 
 .main-layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, var(--content-width)) 1fr;
+
+  > * {
+    grid-column: 2;
+  }
+
+  .full {
+    grid-column: 1 / -1;
+  }
+}
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
 }
 
 header {
@@ -55,10 +73,13 @@ header {
 
 .info-card-container {
   display: flex;
-  border: solid red;
   flex-direction: column;
+  width: fit-content;
+  > * + * {
+    margin-top: var(--flow-space, 1rem);
+  }
 }
-h1 {
+.info-card-heading {
   font-size: var(--h1-font-size);
 }
 
@@ -71,10 +92,12 @@ h1 {
   color: white;
   font-weight: var(--font-weight);
   font-size: var(--link-font-size);
+  --flow-space: 3rem;
 }
 
 .arrow-container {
   display: flex;
   align-items: center;
   gap: 0.2rem;
+  --flow-space: 3rem;
 }
