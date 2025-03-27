@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-clr: linear-gradient(294.28deg, #c8dce6 0%, #b6ccda 100%);
 }
 
 @theme inline {
@@ -20,7 +21,7 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--background-clr);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
