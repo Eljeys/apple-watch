@@ -4,9 +4,9 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { LuShoppingBag } from "react-icons/lu";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
-const icons = () => {
+const Icons = () => {
   return;
   <div></div>;
 };
 
-export default icons;
+export default Icons;

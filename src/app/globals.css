@@ -25,3 +25,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.icon-container {
+  display: flex;
+  gap: 0.5rem;
+  width: 2.5rem;
+  margin-inline-end: 1rem;
+}
