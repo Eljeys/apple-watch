@@ -105,7 +105,9 @@ header {
   display: flex;
   border: solid pink;
   gap: 2rem;
-  align-items: center;
+  /* align-items: center; */
+  padding-inline: 1rem;
+  justify-content: center;
 }
 
 .small-watch-img {
@@ -114,7 +116,7 @@ header {
   justify-content: center;
 }
 
-/* .watch-background {
+.watch-background {
   position: absolute;
   border: solid red;
   content: " ";
@@ -123,8 +125,7 @@ header {
   height: 70px;
   background-color: blue;
   border-radius: 0.5rem;
-  top: 1.2rem;
-} */
+}
 
 .selec-button-wrapper {
   border: solid orange;
