@@ -34,19 +34,13 @@ body {
   background: var(--background-clr);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin-inline: 3rem;
 }
 
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr minmax(0, var(--content-width)) 1fr;
-
-  > * {
-    grid-column: 2;
-  }
-
-  .full {
-    grid-column: 1 / -1;
-  }
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: repeat(3, 1fr);
 }
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
@@ -71,6 +65,11 @@ header {
   margin-inline-end: 1rem;
 }
 
+.info-card-wrapper {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1;
+}
 .info-card-container {
   display: flex;
   flex-direction: column;
@@ -100,4 +99,41 @@ header {
   align-items: center;
   gap: 0.2rem;
   --flow-space: 3rem;
+}
+
+.small-product-pics-container {
+  display: flex;
+  border: solid pink;
+  gap: 2rem;
+  align-items: center;
+}
+
+.small-watch-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-background {
+  position: absolute;
+  border: solid red;
+  content: " ";
+  z-index: -1;
+  width: 120px;
+  height: 70px;
+  background-color: blue;
+  border-radius: 0.5rem;
+  top: 1.2rem;
+}
+
+[data-color="navy"] {
+  background-color: blue;
+}
+[data-color="ocean"] {
+}
+[data-color="mint"] {
+}
+
+figure {
+  position: relative;
 }
