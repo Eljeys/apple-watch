@@ -40,7 +40,7 @@ body {
 .main-layout {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
@@ -114,7 +114,7 @@ header {
   justify-content: center;
 }
 
-.watch-background {
+/* .watch-background {
   position: absolute;
   border: solid red;
   content: " ";
@@ -124,9 +124,18 @@ header {
   background-color: blue;
   border-radius: 0.5rem;
   top: 1.2rem;
+} */
+
+.selec-button-wrapper {
+  border: solid orange;
+  display: grid;
+  grid-column: 3;
+  height: fit-content;
+  gap: 2rem;
+  margin: auto;
 }
 
-[data-color="navy"] {
+/* [data-color="navy"] {
   background-color: blue;
 }
 [data-color="ocean"] {
@@ -136,4 +145,4 @@ header {
 
 figure {
   position: relative;
-}
+} */
