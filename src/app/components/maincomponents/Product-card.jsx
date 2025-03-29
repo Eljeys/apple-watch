@@ -16,7 +16,7 @@ const ProductCard = () => {
         <Image
           src={imageSelected}
           alt="Picture of a navy colored Apple watch"
-          /*style={{ width: "auto", height: "auto" }}*/
+          style={{ width: "auto", height: "auto" }}
         />
       </figure>
 
@@ -26,7 +26,10 @@ const ProductCard = () => {
           onClick={() => handleSmallImageClick(AppleWatchNavy)}
           style={{ cursor: "pointer" }}
         >
-          <div className="watch-background"></div>
+          <div
+            className="watch-background"
+            style={{ backgroundColor: "#404354" }}
+          ></div>
           <Image
             src={AppleWatchNavy}
             alt="Picture of a navy colored Apple watch"
@@ -39,7 +42,10 @@ const ProductCard = () => {
           onClick={() => handleSmallImageClick(AppleWatchOcean)}
           style={{ cursor: "pointer" }}
         >
-          <div className="watch-background"></div>
+          <div
+            className="watch-background"
+            style={{ backgroundColor: "#c0d2e1" }}
+          ></div>
           <Image
             data-color="ocean"
             src={AppleWatchOcean}
@@ -53,7 +59,10 @@ const ProductCard = () => {
           onClick={() => handleSmallImageClick(AppleWatcMint)}
           style={{ cursor: "pointer" }}
         >
-          <div className="watch-background"></div>
+          <div
+            className="watch-background"
+            style={{ backgroundColor: "#58d7c4" }}
+          ></div>
           <Image
             data-color="mint"
             src={AppleWatcMint}

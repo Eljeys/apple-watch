@@ -7,14 +7,16 @@ const InfoCard = () => {
     <section className="info-card-container">
       <div className="info-card-heading">
         <h1>
-          The Perfect Moment <br></br> Between Past And <br></br> Future.
+          <b>The Perfect Moment</b> <br></br> Between Past And <br></br> Future.
         </h1>
       </div>
       <BuyButton />
-      <div className="arrow-container">
-        <FaLongArrowAltLeft />
-        <p>1</p>
-        <FaLongArrowAltRight />
+      <div className="arrow-wrapper">
+        <div className="arrow-container">
+          <FaLongArrowAltLeft />
+          <p>1</p>
+          <FaLongArrowAltRight />
+        </div>
       </div>
     </section>
   );
