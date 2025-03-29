@@ -8,6 +8,10 @@
   --foreground: #171717;
   --background-clr: linear-gradient(294.28deg, #c8dce6 0%, #b6ccda 100%);
 
+  --watch-color-navy: #404354;
+  --watch-color-ocean: #c0d2e1;
+  --watch-color-mint: #58d7c4;
+
   /*Font size*/
   --h1-font-size: 3rem;
   --link-font-size: 1.5rem;
@@ -101,13 +105,21 @@ header {
   --flow-space: 3rem;
 }
 
+.product-card-container {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr); */
+  border: solid red;
+}
+
 .small-product-pics-container {
   display: flex;
   border: solid pink;
   gap: 2rem;
-  /* align-items: center; */
+  align-items: center;
   padding-inline: 1rem;
   justify-content: center;
+  /* grid-row: 2; */
 }
 
 .small-watch-img {
