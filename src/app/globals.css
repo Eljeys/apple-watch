@@ -3,6 +3,14 @@
 :root {
   /*Spaces*/
   --flow-space: 2rem;
+
+  --space-05rem: 0.5rem;
+  --space-1rem: 1rem;
+  --space-2rem: 2rem;
+  --space-3rem: 3rem;
+  --space-4rem: 4rem;
+  --space-5rem: 5rem;
+
   /*Colors*/
   --background: #ffffff;
   --foreground: #171717;
@@ -38,7 +46,7 @@ body {
   background: var(--background-clr);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  margin-inline: 3rem;
+  margin-inline: var(--space-3rem);
 }
 
 .main-layout {
@@ -47,27 +55,35 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .flow > * + * {
-  margin-top: var(--flow-space, 1rem);
+  margin-top: var(--flow-space, (var(--space-1rem)));
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 1rem;
-  margin-block-end: 5rem;
+  padding-block: var(--space-1rem);
+  margin-block-end: var(--space-5rem);
 }
 .nav-list {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
+.nav-list a:hover {
+  font-weight: var(--font-weight);
+  border-radius: 0.5rem;
+  padding-block: var(--space-05rem);
+  padding-inline: var(--space-1rem);
+  width: fit-content;
+  background-color: #ffffff;
+}
 
 .icon-container {
   display: flex;
   gap: 0.5rem;
   width: 2.5rem;
-  margin-inline-end: 1rem;
+  margin-inline-end: var(--space-1rem);
 }
 
 .info-card-wrapper {
@@ -81,7 +97,7 @@ header {
 }
 .info-card-heading {
   font-size: var(--h1-font-size);
-  margin-block: 4rem;
+  margin-block: var(--space-4rem);
 }
 
 .Buy-button {
@@ -89,7 +105,7 @@ header {
   border: 2px solid white;
   width: fit-content;
   padding-inline: 7rem;
-  padding-block: 1rem;
+  padding-block: var(--space-1rem);
   border-radius: 1.5rem;
   color: white;
   font-weight: var(--font-weight);
@@ -100,7 +116,7 @@ header {
 .arrow-wrapper {
   display: grid;
   grid-row: 3;
-  margin-block-start: 3rem;
+  margin-block-start: var(--space-3rem);
 }
 .arrow-container {
   display: flex;
@@ -117,7 +133,7 @@ header {
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-block: 4rem;
+  margin-block: var(--space-4rem);
 }
 
 .small-product-pics-container {
@@ -126,7 +142,7 @@ header {
   align-items: center;
   padding-inline: 6rem;
   justify-content: center;
-  margin-block-start: 3rem;
+  margin-block-start: var(--space-3rem);
   grid-row: 4;
 }
 

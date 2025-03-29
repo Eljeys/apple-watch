@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 
-const NavLink = () => {
+const NavLink = (props) => {
   return (
     <Link
       href={{
         pathname: "#",
       }}
     >
-      Mac
+      {props.linkName}
     </Link>
   );
 };

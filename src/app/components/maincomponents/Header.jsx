@@ -14,23 +14,23 @@ const Header = () => {
       <nav>
         <ul className="nav-list">
           <li>
-            <NavLink />
+            <NavLink linkName={"Mac"} />
           </li>
           <li>
             {" "}
-            <NavLink />
+            <NavLink linkName={"iPhone"} />
           </li>
           <li>
             {" "}
-            <NavLink />
+            <NavLink linkName={"iPad"} />
           </li>
           <li>
             {" "}
-            <NavLink />
+            <NavLink linkName={"iWatch"} />
           </li>
           <li>
             {" "}
-            <NavLink />
+            <NavLink linkName={"Support"} />
           </li>
         </ul>
       </nav>
