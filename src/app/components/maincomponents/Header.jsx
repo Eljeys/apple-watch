@@ -34,9 +34,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className="flex gap-[0.5rem] w-10 mx-4">
-        <FaMagnifyingGlass />
-        <LuShoppingBag />
+      <div className="grid grid-cols-2 gap-4 w-fit col-start-3 col-span-3 ">
+        <FaMagnifyingGlass size={24} />
+        <LuShoppingBag size={24} />
       </div>
     </header>
   );

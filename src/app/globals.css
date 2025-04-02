@@ -2,27 +2,27 @@
 
 :root {
   /*Spaces*/
-  --flow-space: 2rem;
+  /* --flow-space: 2rem;
 
   --space-05rem: 0.5rem;
   --space-1rem: 1rem;
   --space-2rem: 2rem;
   --space-3rem: 3rem;
   --space-4rem: 4rem;
-  --space-5rem: 5rem;
+  --space-5rem: 5rem; */
 
   /*Colors*/
   --background: #ffffff;
   --foreground: #171717;
   --background-clr: linear-gradient(294.28deg, #c8dce6 0%, #b6ccda 100%);
 
-  --watch-color-navy: #404354;
+  /* --watch-color-navy: #404354;
   --watch-color-ocean: #c0d2e1;
-  --watch-color-mint: #58d7c4;
+  --watch-color-mint: #58d7c4; */
 
   /*Font size*/
-  --h1-font-size: 3rem;
-  --link-font-size: 1.5rem;
+  /* --h1-font-size: 3rem;
+  --link-font-size: 1.5rem; */
 
   /*Font weights*/
   --font-weight: bold;
@@ -49,14 +49,14 @@ body {
   margin-inline: var(--space-3rem);
 }
 
-.main-layout {
+/* .main-layout {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .flow > * + * {
   margin-top: var(--flow-space, (var(--space-1rem)));
-}
+} */
 
 /* header {
   display: flex;
@@ -86,11 +86,11 @@ body {
   margin-inline-end: var(--space-1rem);
 } */
 
-.info-card-wrapper {
-  /* border: solid green; */
-  /* display: grid;
+/* .info-card-wrapper { */
+/* border: solid green; */
+/* display: grid;
   grid-column: 1; */
-}
+/* } */
 /* .info-card-container {
   display: grid;
   grid-template-rows: 1fr auto auto;

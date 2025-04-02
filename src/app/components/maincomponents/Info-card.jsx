@@ -11,7 +11,7 @@ const InfoCard = () => {
         </h1>
       </div>
       <BuyButton />
-      <div className="grid row-end-4 my-12">
+      <div className="my-12">
         <div className="flex items-center gap-[0.2rem]">
           <FaLongArrowAltLeft />
           <p>1</p>
