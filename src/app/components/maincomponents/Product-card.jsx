@@ -11,8 +11,8 @@ const ProductCard = () => {
     setImageSelected(imageSrc);
   };
   return (
-    <section className="product-card-container">
-      <figure className="product-card-image">
+    <section className="grid grid-rows-[1fr auto auto]">
+      <figure className="grid items-center justify-center my-16">
         <Image
           src={imageSelected}
           alt="Picture of a navy colored Apple watch"
@@ -20,14 +20,14 @@ const ProductCard = () => {
         />
       </figure>
 
-      <div className="small-product-pics-container">
+      <div className="flex gap-16 items-center justify-center px-24 mt-12 row-start-4">
         <figure
-          className="small-watch-img"
+          className="flex items-center justify-center"
           onClick={() => handleSmallImageClick(AppleWatchNavy)}
           style={{ cursor: "pointer" }}
         >
           <div
-            className="watch-background"
+            className="absolute after:content-[div] w-[120px] h-[70px] rounded-xl -z-[1]"
             style={{ backgroundColor: "#404354" }}
           ></div>
           <Image
@@ -38,12 +38,12 @@ const ProductCard = () => {
           />
         </figure>
         <figure
-          className="small-watch-img"
+          className="flex items-center justify-center"
           onClick={() => handleSmallImageClick(AppleWatchOcean)}
           style={{ cursor: "pointer" }}
         >
           <div
-            className="watch-background"
+            className="absolute after:content-[div] w-[120px] h-[70px] rounded-xl -z-[1] "
             style={{ backgroundColor: "#c0d2e1" }}
           ></div>
           <Image
@@ -55,12 +55,12 @@ const ProductCard = () => {
           />
         </figure>
         <figure
-          className="small-watch-img"
+          className="flex items-center justify-center"
           onClick={() => handleSmallImageClick(AppleWatcMint)}
           style={{ cursor: "pointer" }}
         >
           <div
-            className="watch-background"
+            className="absolute after:content-[div] w-[120px] h-[70px] rounded-xl -z-[1]"
             style={{ backgroundColor: "#58d7c4" }}
           ></div>
           <Image
