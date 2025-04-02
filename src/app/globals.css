@@ -88,8 +88,8 @@ header {
 
 .info-card-wrapper {
   /* border: solid green; */
-  display: grid;
-  grid-column: 1;
+  /* display: grid;
+  grid-column: 1; */
 }
 /* .info-card-container {
   display: grid;
@@ -161,11 +161,11 @@ header {
   border-radius: 0.5rem;
 } */
 
-.selec-button-wrapper {
+/* .selec-button-wrapper {
   display: grid;
   grid-column: 3;
   height: fit-content;
   gap: 2rem;
   margin: auto;
   align-items: center;
-}
+} */

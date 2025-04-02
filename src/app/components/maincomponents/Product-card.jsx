@@ -20,7 +20,7 @@ const ProductCard = () => {
         />
       </figure>
 
-      <div className="flex gap-16 items-center justify-center px-24 mt-12 row-start-4">
+      <div className="flex gap-16 items-center justify-center px-24 mt-12 row-end-4">
         <figure
           className="flex items-center justify-center"
           onClick={() => handleSmallImageClick(AppleWatchNavy)}

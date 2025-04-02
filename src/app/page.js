@@ -8,13 +8,13 @@ export default function Home() {
     <main>
       <Header />
       <section className="main-layout">
-        <div className="info-card-wrapper">
+        <div>
           <InfoCard />
         </div>
-        <section className="product-card-wrapper">
+        <section>
           <ProductCard />
         </section>
-        <div className="selec-button-wrapper">
+        <div className="grid col-3 h-fit gap-8 m-auto">
           <SelectButton />
           <SelectButton />
           <SelectButton />
