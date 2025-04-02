@@ -58,33 +58,33 @@ body {
   margin-top: var(--flow-space, (var(--space-1rem)));
 }
 
-header {
+/* header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: var(--space-1rem);
   margin-block-end: var(--space-5rem);
-}
-.nav-list {
+} */
+/* .nav-list {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-}
-.nav-list a:hover {
+} */
+/* .nav-list a:hover {
   font-weight: var(--font-weight);
   border-radius: 0.5rem;
   padding-block: var(--space-05rem);
   padding-inline: var(--space-1rem);
   width: fit-content;
   background-color: #ffffff;
-}
-
+} */
+/* 
 .icon-container {
   display: flex;
   gap: 0.5rem;
   width: 2.5rem;
   margin-inline-end: var(--space-1rem);
-}
+} */
 
 .info-card-wrapper {
   /* border: solid green; */
