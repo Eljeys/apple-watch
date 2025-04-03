@@ -2,14 +2,6 @@
 import Link from "next/link";
 
 const NavLink = (props) => {
-  return (
-    <Link
-      href={{
-        pathname: "#",
-      }}
-    >
-      {props.linkName}
-    </Link>
-  );
+  return <Link href={props.href}>{props.linkName}</Link>;
 };
 export default NavLink;

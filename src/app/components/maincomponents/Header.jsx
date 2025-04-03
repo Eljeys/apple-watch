@@ -15,23 +15,23 @@ const Header = () => {
       <nav>
         <ul className="flex flex-row gap-8 items-center">
           <li className="hover:font-bold hover:rounded-[0.5rem] hover:py-[0.5rem] hover:px-4 hover:w-fit hover:bg-white">
-            <NavLink linkName={"Mac"} />
+            <NavLink linkName={"Mac"} href={"../mac"} />
           </li>
           <li className="hover:font-bold hover:rounded-[0.5rem] hover:py-[0.5rem] hover:px-4 hover:w-fit hover:bg-white">
             {" "}
-            <NavLink linkName={"iPhone"} />
+            <NavLink linkName={"iPhone"} href={"../iphone"} />
           </li>
           <li className="hover:font-bold hover:rounded-[0.5rem] hover:py-[0.5rem] hover:px-4 hover:w-fit hover:bg-white">
             {" "}
-            <NavLink linkName={"iPad"} />
+            <NavLink linkName={"iPad"} href={"../ipad"} />
           </li>
           <li className="hover:font-bold hover:rounded-[0.5rem] hover:py-[0.5rem] hover:px-4 hover:w-fit hover:bg-white">
             {" "}
-            <NavLink linkName={"iWatch"} />
+            <NavLink linkName={"iWatch"} href={"../iwatch"} />
           </li>
           <li className="hover:font-bold hover:rounded-[0.5rem] hover:py-[0.5rem] hover:px-4 hover:w-fit hover:bg-white">
             {" "}
-            <NavLink linkName={"Support"} />
+            <NavLink linkName={"Support"} href={"../support"} />
           </li>
         </ul>
       </nav>
