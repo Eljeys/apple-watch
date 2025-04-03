@@ -1,8 +1,8 @@
 "use client";
-import Header from "./components/maincomponents/Header";
-import InfoCard from "./components/maincomponents/Info-card";
-import ProductCard from "./components/maincomponents/Product-card";
-import SelectButton from "./components/subcomponent/buttons/Select-button";
+import Header from "../components/maincomponents/Header";
+import InfoCard from "../components/maincomponents/Info-card";
+import ProductCard from "../components/maincomponents/Product-card";
+import SelectButton from "../components/subcomponent/buttons/Select-button";
 export default function Home() {
   return (
     <main className="mx-12">
