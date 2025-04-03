@@ -1,5 +1,6 @@
 "use client";
 //sfc
+import Link from "next/link";
 import { FaApple } from "react-icons/fa6";
 import NavLink from "../subcomponent/links/Links";
 import { FaMagnifyingGlass } from "react-icons/fa6";
